@@ -1,4 +1,5 @@
-/* Basic Reset and Box-Sizing */
+
+/* Global Reset and Box-Sizing */
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -7,7 +8,7 @@
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     margin: 0;
-    padding: 20px 0; /* Add some vertical padding */
+    padding: 20px 0; 
     background-color: #f4f4f9;
     color: #333;
     line-height: 1.6;
@@ -21,47 +22,40 @@ body {
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     max-width: 900px;
-    width: 95%; /* Make it responsive */
+    width: 95%; 
     text-align: center;
 }
 
 /* Title Styling */
 #title {
-    color: #1a237e; /* Deep blue color */
+    color: #1a237e; 
     margin-bottom: 20px;
     font-size: 2.5em;
 }
 
-/* Image Centering and Responsiveness (Crucial for Tests 16, 17, 18, 19) */
+/* Image Section Styling */
 #img-div {
     background-color: #ccc; 
     padding: 10px;
-    margin: 0 auto 20px auto; /* Centers the div (if it had a set width) and adds margin below */
+    margin: 0 auto 20px auto; 
     border-radius: 4px;
 }
 
 #image {
-    /* * User Story/Test Requirements:
-     * display: block (Test 16)
-     * max-width: 100% (Test 17)
-     * height: auto (Test 18)
-     * Centered within its parent (Test 19) 
-    */
     display: block; 
     max-width: 100%;
     height: auto;
-    margin: 0 auto; /* This centers a block element within its parent */
+    margin: 0 auto; 
     border-radius: 2px;
 }
 
-/* Image Caption Styling */
 #img-caption {
     margin: 15px 0 0 0;
     font-size: 0.9em;
     color: #555;
 }
 
-/* Tribute Info Section Styling */
+/* Tribute Info Section (Timeline and Quote) */
 #tribute-info {
     text-align: left;
     margin: 40px 0;
@@ -78,7 +72,7 @@ body {
     list-style-type: none;
     padding-left: 0;
     margin: 0 auto;
-    max-width: 600px; /* Optional: improve readability of the list */
+    max-width: 600px; 
 }
 
 #tribute-info li {
@@ -87,17 +81,30 @@ body {
     position: relative;
 }
 
-/* Custom list bullet */
+/* Custom Star Bullet Point */
 #tribute-info li::before {
     content: '★';
-    color: #fbc02d; /* Gold star */
+    color: #fbc02d; 
     font-weight: bold;
     display: inline-block;
     width: 1em;
     margin-left: -1em;
 }
 
-/* Tribute Link Styling */
+/* Quote Styling (Optional Enhancement) */
+#tribute-info p {
+    font-style: italic;
+    margin: 30px auto;
+    max-width: 700px;
+    font-size: 1.1em;
+    color: #4a148c; 
+    text-align: center;
+    padding: 10px;
+    border-left: 5px solid #4a148c;
+    background-color: #f0f0ff;
+}
+
+/* Footer Styling and Link */
 .tribute-footer {
     padding-top: 20px;
     border-top: 1px solid #e0e0e0;
